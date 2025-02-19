@@ -1,0 +1,56 @@
+InputData: 
+	(Landsat8 Image):
+		Image_data:
+			1 -> Green Band -> 3 on Landsat8
+			2 -> Red Band -> 4 on Landsat8
+			3 -> Near-Infrared -> 5 on Landsat8
+			4 -> swir Band -> 6 on Landsat8
+			5 -> thermal Band -> 10 on Landsat8
+			6 -> Slop
+
+	(MaskFile Image):
+		Mask:
+			1 -> Mask
+
+Landsat:
+	(Landsat_3610):
+		Landsat with 3610 Projection
+			1 -> Green Band -> 3 on Landsat8
+			2 -> swir Band -> 6 on Landsat8
+			3 -> thermal Band -> 10 on Landsat8
+			
+	(Landsat_3610):
+		Landsat with 4326 Projection
+			1 -> Green Band -> 3 on Landsat8
+			2 -> swir Band -> 6 on Landsat8
+			3 -> thermal Band -> 10 on Landsat8
+			
+	(Landsat_Raw):
+		Original Images with all band
+		
+ShapeFile:
+	(Merged_shapeFile_Glacier):
+		Asian_Glacier -> All Glacier
+		
+	(Raw_shapeFile_Glacier):
+		RGI2000-v7.0-C-13_central_asia:
+			central Asia Glacier
+			
+		RGI2000-v7.0-C-14_south_asia_west:
+			South West Asia Glacier
+			
+		RGI2000-v7.0-C-15_south_asia_east:
+			South East
+	
+	(Cliped_shapeFile_Glacier):
+		cliped_shape ->  Cliped with Landsat
+		
+SRTM:
+	(SRTM_slop):
+		SRTM_clip.tiff
+		
+	(SRTM):
+		All Tiff Images
+	
+	(SRTM_merged):
+		SRTM_merged.tiff
